@@ -1,24 +1,18 @@
 <template>
   <div id="app">
-    <BananaButton loading>我爱JS</BananaButton>
-    <BananaButton>我爱Node.js<icon-park type="AddText" theme="filled" /></BananaButton>
-    <BananaButtonGroup>
-      <BananaButton loading>我爱JS</BananaButton>
-      <BananaButton>我爱Node.js<icon-park type="AddText" theme="filled" /></BananaButton>
-    </BananaButtonGroup>
+    <b-button loading>我爱JS</b-button>
+    <b-button>我爱Node.js<icon-park type="AddText" theme="filled" /></b-button>
+    <b-button-group>
+      <b-button><icon-park type="left" theme="filled" />上一页</b-button>
+      <b-button>更多</b-button>
+      <b-button>下一页<icon-park type="right" theme="filled" /></b-button>
+    </b-button-group>
   </div>
 </template>
 
 <script>
-import BananaButton from './components/BananaButton.vue';
-import BananaButtonGroup from './components/ButtonGroup.vue';
-
 export default {
   name: 'App',
-  components: {
-    BananaButton,
-    BananaButtonGroup,
-  },
 };
 </script>
 

@@ -1,21 +1,21 @@
 <template>
-  <div class="banana-button-group">
+  <div class="b-button-group">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BananaButtonGroup',
+  name: 'b-button-group',
 };
 </script>
 
 <style lang="scss" scoped>
-.banana-button-group {
+.b-button-group {
   display: flex;
   justify-content: center;
   align-items: center;
-  > .button {
+  > .b-button {
     border-radius: 0;
     &:not(:first-child) {
       margin-left: -1px;
@@ -28,7 +28,8 @@ export default {
       border-top-right-radius: var(--button-radius);
       border-bottom-right-radius: var(--button-radius);
     }
-    &:hover {
+    &:hover,
+    &:focus {
       position: relative;
       z-index: 1;
     }

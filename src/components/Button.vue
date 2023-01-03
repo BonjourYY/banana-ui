@@ -1,5 +1,5 @@
 <template>
-  <button class="button">
+  <button class="b-button">
     <icon-park type="loading-four" v-if="loading"></icon-park>
     <slot></slot>
   </button>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'BananaButton',
+  name: 'b-button',
   props: {
     loading: {
       type: Boolean,
@@ -26,7 +26,7 @@ export default {
     rotate: 360deg;
   }
 }
-.button {
+.b-button {
   display: flex;
   justify-content: center;
   align-items: center;
