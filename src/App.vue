@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BananaButton loading>我爱JS</BananaButton>
+    <BananaButton>我爱Node.js<icon-park type="AddText" theme="filled" /></BananaButton>
+    <BananaButtonGroup>
+      <BananaButton loading>我爱JS</BananaButton>
+      <BananaButton>我爱Node.js<icon-park type="AddText" theme="filled" /></BananaButton>
+    </BananaButtonGroup>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BananaButton from './components/BananaButton.vue';
+import BananaButtonGroup from './components/ButtonGroup.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    BananaButton,
+    BananaButtonGroup,
+  },
+};
 </script>
 
 <style>
